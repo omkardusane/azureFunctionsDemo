@@ -5,5 +5,31 @@ module.exports = function (context, req) {
     res = {
         body: {ok:true,message:'done!', cats:commons.incr(), dogs: ++dogs}
     };
-    context.done(null, res);
+    context.done(null, res);    
 };
+
+/**
+ * Responses from the calls
+ * 1.   {
+          "ok": true,
+          "message": "done!",
+          "cats": 101,
+          "dogs": 101
+        }
+ * 
+ * 2.   {
+          "ok": true,
+          "message": "done!",
+          "cats": 102,
+          "dogs": 101
+        }
+ * 
+ * 3.   {
+          "ok": true,
+          "message": "done!",
+          "cats": 103,
+          "dogs": 101
+        }
+ *
+ *  
+ */
