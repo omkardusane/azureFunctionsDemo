@@ -1,9 +1,10 @@
-function commons(){
-	let cats = 100;
-	this.incr = ()=>{
-		cats++;
-		return cats ;	
+let commons = function(){
+	let state  = 11;
+	let changeState = function(){
+		state++;
 	};
-	return this;
+	let getState = function(){
+		return state ;
+	}
 }
 module.exports = commons();
