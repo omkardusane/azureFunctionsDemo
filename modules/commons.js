@@ -1,9 +1,9 @@
 let commons = function(){
 	let state  = 11;
-	let changeState = function(){
+	this.changeState = function(){
 		state++;
 	};
-	let getState = function(){
+	this.getState = function(){
 		return state ;
 	}
 }
