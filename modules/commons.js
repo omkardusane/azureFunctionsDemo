@@ -5,6 +5,8 @@ let commons = function(){
 	};
 	this.getState = function(){
 		return state ;
-	}
+	};
+	return this;
+	
 }
 module.exports = commons();

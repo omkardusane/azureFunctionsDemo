@@ -1,7 +1,7 @@
 module.exports = function (context, req) {
     let dogs = 100;
-    let commmons = require ('../modules/commons.js');
-    commmons.changeState();
+    let commons = require('../modules/commons.js');
+    commons.changeState();
     res = {
         body: {
             ok:true,
